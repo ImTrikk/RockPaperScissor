@@ -1,5 +1,6 @@
 import "./App.css";
 import { DisplayChoice } from "./components/DisplayChoice";
+import { HandShake } from "./components/HandShake";
 import { PlayerChoices } from "./components/PlayerChoices";
 import { Result } from "./components/Result";
 
@@ -15,6 +16,7 @@ function App() {
 						<div className="pt-10">
 							<DisplayChoice />
 						</div>
+						<div>{/* <HandShake /> */}</div>
 						<div className="text-center pt-10 space-y-5">
 							<h1 className="text-xl text-white font-medium">Enter your Choice</h1>
 							<PlayerChoices />
