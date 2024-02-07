@@ -5,6 +5,10 @@ import { PlayerChoices } from "./components/PlayerChoices";
 import { Result } from "./components/Result";
 
 function App() {
+	const onChangePlayerChoice = (value) => {
+		console.log(value);
+	};
+
 	return (
 		<>
 			<div className="bg-gradient-to-r from-violet-200 to-pink-200 h-screen">
@@ -19,7 +23,9 @@ function App() {
 						<div>{/* <HandShake /> */}</div>
 						<div className="text-center pt-10 space-y-5">
 							<h1 className="text-xl text-white font-medium">Enter your Choice</h1>
-							<PlayerChoices />
+							<PlayerChoices
+								onChangePlayerChoice={(value) => onChangePlayerChoice(value)}
+							/>
 						</div>
 						<div className="text-center pt-5">
 							<Result />
