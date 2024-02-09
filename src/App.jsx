@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import { DisplayChoice } from "./components/DisplayChoice";
 import { HandShake } from "./components/HandShake";
@@ -26,9 +26,12 @@ function App() {
 		setDisplayShake(true);
 	};
 
-	if (playerChoice !== "") {
-		setPlayerChoice("");
-	}
+	useEffect(() => {
+		setTimeout(() => {
+			setPlayerChoice("");
+			setComputerChoice("");
+		}, 8000);
+	}, [playerChoice]);
 
 	return (
 		<>

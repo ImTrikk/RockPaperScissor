@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 
 export const DisplayChoice = ({ playerChoice, computerChoice }) => {
-	const [showChoices, setShowChoices] = useState();
 
 	const player = () => {
 		switch (playerChoice) {
