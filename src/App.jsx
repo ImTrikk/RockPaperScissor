@@ -6,15 +6,14 @@ import { PlayerChoices } from "./components/PlayerChoices";
 import { Result } from "./components/Result";
 
 function App() {
-	const [playerChoice, setPlayerChoice] = useState();
-	const [computerChoice, setComputerChoice] = useState();
+	const [playerChoice, setPlayerChoice] = useState("");
+	const [computerChoice, setComputerChoice] = useState("");
 	const [displayShake, setDisplayShake] = useState(false);
 
 	const choices = ["rock", "paper", "scissor"];
 
 	const onChangeComputerChoice = () => {
 		const random = Math.floor(Math.random() * choices.length);
-		console.log(choices[random]);
 		setComputerChoice(choices[random]);
 		setTimeout(() => {
 			setDisplayShake(false);
@@ -22,10 +21,14 @@ function App() {
 	};
 
 	const onChangePlayerChoice = (value) => {
-		onChangeComputerChoice();
+		onChangeComputerChoice(value);
 		setPlayerChoice(value);
 		setDisplayShake(true);
 	};
+
+	if (playerChoice !== "") {
+		setPlayerChoice("");
+	}
 
 	return (
 		<>
@@ -41,7 +44,7 @@ function App() {
 								computerChoice={computerChoice}
 							/>
 						</div>
-						<div>{displayShake ? <HandShake /> : ""}</div>
+						{/* <div>{displayShake ? <HandShake /> : ""}</div> */}
 						<div className="text-center pt-10 space-y-5">
 							<h1 className="text-xl text-white font-medium">Enter your Choice</h1>
 							<PlayerChoices

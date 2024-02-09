@@ -4,29 +4,25 @@ export const DisplayChoice = ({ playerChoice, computerChoice }) => {
 	const [showChoices, setShowChoices] = useState();
 
 	const player = () => {
-		setTimeout(() => {
-			switch (playerChoice) {
-				case "rock":
-					return "/choice/rock.gif";
-				case "paper":
-					return "/choice/rock.gif";
-				case "scissor":
-					return "/choice/scissor.gif";
-			}
-		}, 3000);
+		switch (playerChoice) {
+			case "rock":
+				return "/choice/rock.gif";
+			case "paper":
+				return "/choice/paper.gif";
+			case "scissor":
+				return "/choice/scissor.gif";
+		}
 	};
 
 	const computer = () => {
-		setTimeout(() => {
-			switch (computerChoice) {
-				case "rock":
-					return "/choice/rock.gif";
-				case "paper":
-					return "/choice/rock.gif";
-				case "scissor":
-					return "/choice/scissor.gif";
-			}
-		}, 3000);
+		switch (computerChoice) {
+			case "rock":
+				return "/choice/rock.gif";
+			case "paper":
+				return "/choice/paper.gif";
+			case "scissor":
+				return "/choice/scissor.gif";
+		}
 	};
 
 	return (
@@ -39,7 +35,7 @@ export const DisplayChoice = ({ playerChoice, computerChoice }) => {
 					<h1 className="text-7xl text-white font-bold">vs</h1>
 				</div>
 				<div className="w-[300px] h-[200px] bg-white shadow-sm rounded">
-					<img src={computer()} alt="" />
+					<img src={computer()} alt="" className="scale-x-[-1]" />
 				</div>
 			</div>
 		</>
