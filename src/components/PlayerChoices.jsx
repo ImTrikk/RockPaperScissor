@@ -13,7 +13,7 @@ export const PlayerChoices = ({ onChangePlayerChoice }) => {
 			setRockDisabled(false);
 			setPaperDisabled(false);
 			setScissorDisabled(false);
-		}, 5000);
+		}, 6000);
 	};
 
 	const rock = () => {
