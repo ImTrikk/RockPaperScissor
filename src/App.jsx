@@ -30,8 +30,8 @@ function App() {
 		setTimeout(() => {
 			setPlayerChoice("");
 			setComputerChoice("");
-		}, 8000);
-	}, [playerChoice]);
+		}, 6000);
+	}, [playerChoice, computerChoice]);
 
 	return (
 		<>
