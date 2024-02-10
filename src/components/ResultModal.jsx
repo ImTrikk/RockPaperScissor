@@ -6,7 +6,6 @@ export const ResultModal = ({ playerScore, onChangeClose }) => {
 	const [playerWin, setPlayerWin] = useState(false);
 
 	const handleClose = () => {
-		console.log("clicked");
 		onChangeClose(true);
 	};
 
