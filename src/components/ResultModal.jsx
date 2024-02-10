@@ -1,4 +1,6 @@
 export const ResultModal = () => {
+	//implement logic
+
 	return (
 		<>
 			<div>

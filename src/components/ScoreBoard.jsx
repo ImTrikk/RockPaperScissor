@@ -1,4 +1,4 @@
-export const Result = () => {
+export const ScoreBoard = () => {
 	return (
 		<>
 			<div className="">

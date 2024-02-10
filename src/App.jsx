@@ -3,7 +3,7 @@ import "./App.css";
 import { DisplayChoice } from "./components/DisplayChoice";
 import { HandShake } from "./components/HandShake";
 import { PlayerChoices } from "./components/PlayerChoices";
-import { Result } from "./components/Result";
+import { ScoreBoard } from "./components/ScoreBoard";
 
 function App() {
 	const [playerChoice, setPlayerChoice] = useState("");
@@ -15,9 +15,9 @@ function App() {
 	const onChangeComputerChoice = () => {
 		const random = Math.floor(Math.random() * choices.length);
 		setComputerChoice(choices[random]);
-		setTimeout(() => {
-			setDisplayShake(false);
-		}, 2550);
+		// setTimeout(() => {
+		// 	setDisplayShake(false);
+		// }, 2550);
 	};
 
 	const onChangePlayerChoice = (value) => {
@@ -30,7 +30,7 @@ function App() {
 		setTimeout(() => {
 			setPlayerChoice("");
 			setComputerChoice("");
-		}, 6000);
+		}, 5000);
 	}, [playerChoice, computerChoice]);
 
 	return (
@@ -55,7 +55,10 @@ function App() {
 							/>
 						</div>
 						<div className="text-center pt-5">
-							<Result />
+							<ScoreBoard
+							// playerChoice={playerChoice}
+							// computerChoice={computerChoice}
+							/>
 						</div>
 					</div>
 				</div>
