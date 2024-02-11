@@ -43,7 +43,7 @@ function App() {
 				<div className="flex items-center justify-center h-screen">
 					<div className="pt-10">
 						<h1 className="text-2xl md:text-5xl font-bold text-white text-center">
-							Welcome to RockPaperScissor Shoot!
+							Welcome to RockPaperScissors Shoot!
 						</h1>
 						{openDisplay ? (
 							<div className="pt-10">

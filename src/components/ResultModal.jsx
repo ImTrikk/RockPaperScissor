@@ -38,7 +38,7 @@ export const ResultModal = ({ playerScore, onChangeClose }) => {
 							<div className="flex flex-col items-center">
 								<img src="/images/lose.jpg" alt="" className="w-[250px] rounded-lg" />
 								<h1 className="pt-3 text-2xl text-center text-red-400">
-									You lost, better luck next time.
+									You lose, better luck next time.
 								</h1>
 							</div>
 						)}
