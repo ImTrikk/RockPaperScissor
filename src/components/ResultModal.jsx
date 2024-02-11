@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
+import JSConfetti from "js-confetti";
 
 export const ResultModal = ({ playerScore, onChangeClose }) => {
 	//implement win lose logic
 
 	const [playerWin, setPlayerWin] = useState(false);
+	const jsConfetti = new JSConfetti();
 
 	const handleClose = () => {
 		onChangeClose(true);
@@ -12,6 +14,7 @@ export const ResultModal = ({ playerScore, onChangeClose }) => {
 	useEffect(() => {
 		if (playerScore == 3) {
 			setPlayerWin(true);
+			jsConfetti.addConfetti();
 		} else {
 			setPlayerWin(false);
 		}
