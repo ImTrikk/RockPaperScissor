@@ -42,7 +42,7 @@ function App() {
 			<div className="bg-gradient-to-r from-violet-200 to-pink-200 h-screen">
 				<div className="flex items-center justify-center h-screen">
 					<div className="pt-10">
-						<h1 className="text-3xl font-bold text-white text-center">
+						<h1 className="text-5xl font-bold text-white text-center">
 							Welcome to RockPaperScissor Shoot!
 						</h1>
 						{openDisplay ? (

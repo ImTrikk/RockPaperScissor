@@ -45,16 +45,18 @@ export const ScoreBoard = ({ playerChoice, computerChoice }) => {
 	};
 
 	useEffect(() => {
+		checkScore();
+	}, [playerChoice, computerChoice]);
+
+	useEffect(() => {
 		if (playerScore == 3) {
 			toast.success("Congratulations you win!");
 			setOpenResultModal(true);
 		} else if (computerScore == 3) {
 			toast.error("You lose, Computer wins");
 			setOpenResultModal(true);
-		} else {
-			checkScore();
 		}
-	}, [][(playerChoice, computerChoice)]);
+	});
 
 	return (
 		<>
