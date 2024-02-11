@@ -70,6 +70,12 @@ function App() {
 						</div>
 					</div>
 				</div>
+				<div className="absolute bottom-10 left-0 right-0 flex items-center justify-center">
+					<h1 className="text-white text-sm">
+						Made with ❤️ by{" "}
+						<a href="https://patrick-dionen.vercel.app/">Patrick James Dionen</a>
+					</h1>
+				</div>
 			</div>
 		</>
 	);
