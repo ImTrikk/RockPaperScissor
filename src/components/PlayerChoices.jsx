@@ -35,7 +35,7 @@ export const PlayerChoices = ({ onChangePlayerChoice }) => {
 		<>
 			<div className="flex gap-2 items-center justify-center">
 				<button
-					className={`bg-white rounded w-[100px] h-[100px] shadow hover:-translate-y-5 transform transition-transform ease-in-out duration-300 flex items-center justify-center text-5xl cursor-pointer ${
+					className={`bg-white rounded w-full md:w-[100px] h-[100px] shadow hover:-translate-y-5 transform transition-transform ease-in-out duration-300 flex items-center justify-center text-xl md:text-5xl cursor-pointer ${
 						isRockDisabled ? "opacity-50 pointer-events-none" : ""
 					}`}
 					onClick={rock}
@@ -43,7 +43,7 @@ export const PlayerChoices = ({ onChangePlayerChoice }) => {
 					👊
 				</button>
 				<button
-					className={`bg-white rounded w-[100px] h-[100px] shadow hover:-translate-y-5 transform transition-transform ease-in-out duration-300 flex items-center justify-center text-5xl cursor-pointer ${
+					className={`bg-white rounded w-full md:w-[100px] h-[100px] shadow hover:-translate-y-5 transform transition-transform ease-in-out duration-300 flex items-center justify-center text-xl md:text-5xl cursor-pointer ${
 						isPaperDisabled ? "opacity-50 pointer-events-none" : ""
 					}`}
 					onClick={paper}
@@ -51,7 +51,7 @@ export const PlayerChoices = ({ onChangePlayerChoice }) => {
 					✋
 				</button>
 				<button
-					className={`bg-white rounded w-[100px] h-[100px] shadow hover:-translate-y-5 transform transition-transform ease-in-out duration-300 flex items-center justify-center text-5xl cursor-pointer ${
+					className={`bg-white rounded w-full md:w-[100px] h-[100px] shadow hover:-translate-y-5 transform transition-transform ease-in-out duration-300 flex items-center justify-center text-xl md:text-5xl cursor-pointer ${
 						isScissorDisabled ? "opacity-50 pointer-events-none" : ""
 					}`}
 					onClick={scissor}

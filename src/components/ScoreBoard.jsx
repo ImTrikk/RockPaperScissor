@@ -70,7 +70,7 @@ export const ScoreBoard = ({ playerChoice, computerChoice }) => {
 				""
 			)}
 			<div className="pt-5">
-				<div className="flex items-center justify-center gap-10">
+				<div className="flex items-center justify-center gap-2 md:gap-10">
 					<div className="text-white border border-green-500 bg-green-400 p-4 rounded flex flex-col items-start gap-1 justify-center px-4 text-lg">
 						<IoPerson size={40} />
 						<h1>Player score: {playerScore}</h1>

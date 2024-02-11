@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 
 export const DisplayChoice = ({ playerChoice, computerChoice }) => {
-
 	const player = () => {
 		switch (playerChoice) {
 			case "rock":
@@ -27,7 +26,7 @@ export const DisplayChoice = ({ playerChoice, computerChoice }) => {
 	return (
 		<>
 			<div className="flex items-center justify-center gap-2">
-				<div className="w-[300px] h-[200px] bg-white shadow-sm rounded">
+				<div className="w-full md:w-[300px] h-[200px] bg-white shadow-sm rounded">
 					<img src={player()} alt="" />
 				</div>
 				<div>
